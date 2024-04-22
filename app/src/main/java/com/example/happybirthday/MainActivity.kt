@@ -50,8 +50,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     GreetingImage(
-                        stringResource(R.string.happy_birthday_text),
-                        stringResource(R.string.signature_text)
+                        stringResource(R.string.happy_birthday_text), //Message
+                        stringResource(R.string.signature_text) //From
                     )
                 }
             }
@@ -105,7 +105,7 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
     }
 }
 
-@Preview(showBackground = false)
+@Preview(showBackground = false, showSystemUi = true)
 @Composable
 private fun BirthdayCardPreview() {
     HappyBirthdayTheme {
